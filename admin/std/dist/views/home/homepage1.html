@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layuiAdmin 主页示例模板一</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../../layuiadmin/style/admin.css" media="all">
+</head>
+<body>
+
+  <div class="layui-fluid" id="component-tabs">
+    <div class="layui-row">
+      <div class="layui-col-md12">
+        <div class="layui-card">
+          <div class="layui-card-header">数据采集</div>
+          <div class="layui-card-body">
+            <div class="layui-tab">
+              <ul class="layui-tab-title">
+                <li class="layui-this">服务接入配置</li>
+                <li>数据采集依赖下载</li>
+              </ul>
+              <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                  
+        <form class="layui-form" action="" lay-filter="component-form-group">
+          <div class="layui-form-item">
+            <label class="layui-form-label">服务名</label>
+            <div class="layui-input-block">
+              <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入服务名" class="layui-input">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">所属公司</label>
+            <div class="layui-input-block">
+              <input type="text" name="username" lay-verify="required" placeholder="请输入所属公司" autocomplete="off" class="layui-input">
+            </div>
+          </div>
+          
+          <div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label">绑定邮箱</label>
+              <div class="layui-input-inline">
+                <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" placeholder="请输入绑定邮箱" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-inline">
+              <label class="layui-form-label">验证码</label>
+              <div class="layui-input-inline">
+                <input type="text" name="email" lay-verify="email" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+              </div>
+            </div>
+
+            <div class="layui-inline">
+              
+              <div class="layui-input-inline">
+                <button class="layui-btn">发送验证码</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          <div class="layui-form-item">
+           
+            <div class="layui-inline">
+              <label class="layui-form-label">服务负责人</label>
+              <div class="layui-input-inline">
+                <select name="modules" lay-verify="required" lay-search="">
+                  <option value="">直接选择或搜索选择</option>
+                  <option value="1">layer</option>
+                  <option value="2">form</option>
+                  <option value="3">layim</option>
+                  <option value="4">element</option>
+                  <option value="5">laytpl</option>
+                  <option value="6">upload</option>
+                  <option value="7">laydate</option>
+                  <option value="8">laypage</option>
+                  <option value="9">flow</option>
+                  <option value="10">util</option>
+                  <option value="11">code</option>
+                  <option value="12">tree</option>
+                  <option value="13">layedit</option>
+                  <option value="14">nav</option>
+                  <option value="15">tab</option>
+                  <option value="16">table</option>
+                  <option value="17">select</option>
+                  <option value="18">checkbox</option>
+                  <option value="19">switch</option>
+                  <option value="20">radio</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="layui-inline">
+              <label class="layui-form-label">预警通知人</label>
+              <div class="layui-input-inline">
+                <select name="modules" lay-verify="required" lay-search="">
+                  <option value="">直接选择或搜索选择</option>
+                  <option value="1">layer</option>
+                  <option value="2">form</option>
+                  <option value="3">layim</option>
+                  <option value="4">element</option>
+                  <option value="5">laytpl</option>
+                  <option value="6">upload</option>
+                  <option value="7">laydate</option>
+                  <option value="8">laypage</option>
+                  <option value="9">flow</option>
+                  <option value="10">util</option>
+                  <option value="11">code</option>
+                  <option value="12">tree</option>
+                  <option value="13">layedit</option>
+                  <option value="14">nav</option>
+                  <option value="15">tab</option>
+                  <option value="16">table</option>
+                  <option value="17">select</option>
+                  <option value="18">checkbox</option>
+                  <option value="19">switch</option>
+                  <option value="20">radio</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="layui-form-item">
+            <label class="layui-form-label">公司所在地</label>
+            <div class="layui-input-block">
+              <div class="layui-inline">
+                <select name="quiz1">
+                  <option value="">请选择省</option>
+                  <option value="浙江">江苏省</option>
+                  <option value="你的工号">江西省</option>
+                  <option value="你最喜欢的老师">福建省</option>
+                </select>
+              </div>
+              <div class="layui-inline">
+                <select name="quiz2">
+                  <option value="">请选择市</option>
+                  <option value="杭州">南京市</option>
+                  <option value="宁波" disabled="">宁波</option>
+                  <option value="温州">温州</option>
+                  <option value="温州">台州</option>
+                  <option value="温州">绍兴</option>
+                </select>
+              </div>
+              <div class="layui-inline">
+                <select name="quiz3">
+                  <option value="">请选择县/区</option>
+                  <option value="西湖区">江宁区</option>
+                  <option value="余杭区">余杭区</option>
+                  <option value="拱墅区">临安市</option>
+                </select>
+              </div>
+              <!-- <div class="layui-inline">
+                <div class="layui-form-mid layui-word-aux">此处只是演示联动排版，并未做联动交互</div>
+              </div> -->
+            </div>
+          </div>
+          
+         
+          
+          
+          <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">服务描述</label>
+            <div class="layui-input-block">
+              <textarea name="text" placeholder="请输入服务描述信息" class="layui-textarea"></textarea>
+            </div>
+          </div>        
+          <div class="layui-form-item layui-layout-admin">
+            <div class="layui-input-block">
+              <div class="layui-footer" style="left: 0;">
+                <button class="layui-btn" lay-submit="" lay-filter="component-form-demo1">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </div>
+        </form>
+                </div>
+
+
+
+
+                <div class="layui-tab-item">
+
+                  <div class="layui-card">
+                    <div class="layui-card-header">依赖Jar包</div>
+                    <div class="layui-card-body">
+                  <a href="../../layuiadmin/style/res/kpi-collection.jar" rel="external nofollow" style="text-decoration: underline;" download="数据采集依赖Jar包">点击下载数据采集依赖包</a>
+                      
+                    </div>
+                  </div>
+                  
+                
+
+                  <div class="layui-card">
+                    <div class="layui-card-header">Maven依赖</div>
+                    <div class="layui-card-body">
+                      <!-- 在里面存放任意的代码 &lt表示<, 否则显示不出来 -->
+                      <pre class="layui-code">
+          &lt!-- https://mvnrepository.com/artifact/com.seu.detection/kpi-collection -->
+          &ltdependency>
+          &ltgroupId>com.seu.kpi-collection&lt/groupId>
+          &ltartifactId>kpi-collection&lt/artifactId>
+          &ltversion>1.0.1&lt/version>
+          &ltscope>runtime&lt/scope>
+          &lt/dependency>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+  </div>
+
+  <script src="../../layuiadmin/layui/layui.js"></script>  
+  <script>
+  layui.config({
+    base: '../../layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index', 'sample']);
+  </script>
+</body>
+</html>
